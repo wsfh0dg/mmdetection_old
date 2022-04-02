@@ -23,6 +23,7 @@ def msg_send(name, ep, log_dict):
             name=name,
             content=content_str))
     print(resp.content.decode())
+    del resp
 
 
 @HOOKS.register_module()
@@ -31,12 +32,21 @@ class SendMsgInfoHook(Hook):
         self.send = send
 
     """Send message to WeChat Terminal"""
-    def after_train_iter(self, runner):
+    def after_train_epoch(self, runner):
         epoch = runner.epoch
         model_name = runner.model_name
         log_dict = runner.log_buffer.val_history
+        # content_str = f"Epoch={epoch}, " \
+        #               f"loss_rpn_cls={log_dict['loss_rpn_cls'][-1]:.4f}, " \
+        #               f"loss_rpn_bbox={log_dict['loss_rpn_bbox'][-1]:.4f}, " \
+        #               f"loss_roi_cls={log_dict['loss_cls'][-1]:.4f}, " \
+        #               f"loss_roi_bbox={log_dict['loss_bbox'][-1]:.4f}, " \
+        #               f"acc={log_dict['acc'][-1]}, " \
+        #               f"total_loss={log_dict['loss'][-1]:.4f}"
         if not epoch % 4:
+            # print(content_str)
             msg_send(model_name, epoch, log_dict)
+
 
 
 

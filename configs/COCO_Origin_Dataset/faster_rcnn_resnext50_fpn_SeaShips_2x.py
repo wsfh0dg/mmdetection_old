@@ -44,7 +44,7 @@ model = dict(
             in_channels=256,
             fc_out_channels=1024,
             roi_feat_size=7,
-            num_classes=20,
+            num_classes=6,
             bbox_coder=dict(
                 type='DeltaXYWHBBoxCoder',
                 target_means=[0., 0., 0., 0.],
@@ -139,8 +139,8 @@ test_pipeline = [
         ])
 ]
 data = dict(
-    samples_per_gpu=6,
-    workers_per_gpu=6,
+    samples_per_gpu=3,
+    workers_per_gpu=3,
     train=dict(
         type='RepeatDataset',
         times=2,

@@ -12,7 +12,7 @@ from .xml_style import XMLDataset
 class SeaShipDataset(XMLDataset):
 
     CLASSES = ('ore carrier', 'bulk cargo carrier', 'container ship',
-               'general cargo ship', 'fishing boot' 'passenger ship')
+               'general cargo ship', 'fishing boot', 'passenger ship')
 
     PALETTE = [(106, 0, 228), (119, 11, 32), (165, 42, 42), (0, 0, 192),
                (197, 226, 255), (0, 60, 100), (0, 0, 142), (255, 77, 255),

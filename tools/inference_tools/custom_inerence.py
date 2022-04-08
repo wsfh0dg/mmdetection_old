@@ -3,9 +3,12 @@
 # @Author : Scotty1373
 # @File : custom_inerence.py
 # @Software : PyCharm
+import json
+import os
 import time
 
 import mmcv
+import numpy as np
 import torch
 import argparse
 
@@ -15,6 +18,7 @@ from mmdet.models import build_detector
 from mmdet.apis.test import single_gpu_test, multi_gpu_test
 from mmdet.apis.inference import init_detector, inference_detector, show_result_pyplot
 from mmdet.datasets import build_dataloader, build_dataset
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -34,6 +38,7 @@ def parse_args():
                         default=False)
     args = parser.parse_args()
     return args
+
 
 def main():
     args = parse_args()
@@ -86,16 +91,31 @@ def main():
         print(f'\nwrite test dataset result to {args.out}')
         mmcv.dump(outputs, args.out)
     else:
+        json_format_result = []
         root = 'imgs/'
-        img_path = '000012.jpg'
+        img_path = '000021.jpg'
         model = init_detector(config=args.config,
                               checkpoint=args.checkpoint,
                               device='cuda:0')
         result = inference_detector(model=model, imgs=root+img_path)
-        pass
-        time.time()
+        # 增加对应label
+        for idx, bbox_list in enumerate(result):
+            if bbox_list.size != 0:
+                # for idx_inner, bbox_singel in enumerate(bbox_list):
+                #     resultwithlabel.append(np.append(result[idx][idx_inner], np.array(idx)))
+                results = {'img_path': root + img_path,
+                           'img_idx': os.path.splitext(img_path)[0],
+                           'cate_idx': idx,
+                           'bbox': bbox_list[:, :4],
+                           'confidence': bbox_list[:, 4]}
+                json_format_result.append(results)
+
+        show_result_pyplot(model, root+img_path, result)
+        mmcv.dump(json_format_result, args.out)
 
 
+if __name__ == '__main__':
+    main()
 
 
 

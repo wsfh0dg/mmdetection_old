@@ -70,7 +70,7 @@ class SeaShipDataset(XMLDataset):
             # 不同的ds_name决定了eval时计算ap时的不同方法
             # ds_name = 'voc07'衡量指标为11点法；否则为计算AUC区域
             # 实际计算ap中，按AUC区域计算和11点插值计算的ap数值中，11点插值的ap会更大一点
-            ds_name = "voc07"
+            ds_name = self.CLASSES
             mean_aps = []
             for iou_thr in iou_thrs:
                 print_log(f'\n{"-" * 15}iou_thr: {iou_thr}{"-" * 15}')

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+fp16 = dict(loss_scale=512.)
 model = dict(
     type='FasterRCNN',
     backbone=dict(

@@ -124,7 +124,7 @@ class BboxAnalyze:
 
 
 if __name__ == '__main__':
-    bb_analy = BboxAnalyze('SeaShips')
+    bb_analy = BboxAnalyze('../../SeaShips', idx_file='test')
     collect_data = bb_analy.get_collect_data
     bbox = collect_data['bbox']
     label = collect_data['labels']

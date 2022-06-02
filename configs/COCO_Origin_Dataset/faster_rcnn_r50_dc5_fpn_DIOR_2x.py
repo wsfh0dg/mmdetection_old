@@ -22,7 +22,7 @@ model = dict(
             type='AnchorGenerator',
             scales=[2, 4, 8, 16, 32],
             ratios=[0.5, 1.0, 2.0],
-            strides=[16]),
+            strides=[32]),
         bbox_coder=dict(
             type='DeltaXYWHBBoxCoder',
             target_means=[.0, .0, .0, .0],
@@ -39,7 +39,7 @@ model = dict(
             featmap_strides=[16]),
         bbox_head=dict(
             type='Shared2FCBBoxHead',
-            in_channels=256,
+            in_channels=2048,
             fc_out_channels=1024,
             roi_feat_size=7,
             num_classes=20,
@@ -71,21 +71,21 @@ model = dict(
             pos_weight=-1,
             debug=False),
         rpn_proposal=dict(
-            nms_pre=2000,
-            max_per_img=1000,
+            nms_pre=12000,
+            max_per_img=2000,
             nms=dict(type='nms', iou_threshold=0.5),
             min_bbox_size=0),
         rcnn=dict(
             assigner=dict(
                 type='MaxIoUAssigner',
-                pos_iou_thr=0.7,
+                pos_iou_thr=0.5,
                 neg_iou_thr=0.5,
                 min_pos_iou=0.5,
                 match_low_quality=False,
                 ignore_iof_thr=-1),
             sampler=dict(
                 type='RandomSampler',
-                num=256,
+                num=512,
                 pos_fraction=0.25,
                 neg_pos_ub=-1,
                 add_gt_as_proposals=True),
@@ -93,7 +93,7 @@ model = dict(
             debug=False)),
     test_cfg=dict(
         rpn=dict(
-            nms_pre=1000,
+            nms_pre=6000,
             max_per_img=1000,
             nms=dict(type='nms', iou_threshold=0.7),
             min_bbox_size=0),
@@ -105,10 +105,6 @@ model = dict(
         # e.g., nms=dict(type='soft_nms', iou_threshold=0.5, min_score=0.05)
     ))
 
-
-# dataset settings
-dataset_type = 'DIORDataset'
-data_root = 'DIOR/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
@@ -136,6 +132,10 @@ test_pipeline = [
             dict(type='Collect', keys=['img']),
         ])
 ]
+
+# dataset settings
+dataset_type = 'DIORDataset'
+data_root = 'DIOR/'
 data = dict(
     samples_per_gpu=3,
     workers_per_gpu=3,

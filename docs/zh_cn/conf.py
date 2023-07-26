@@ -44,10 +44,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
-    'recommonmark',
+    'myst_parser',
     'sphinx_markdown_tables',
     'sphinx_copybutton',
 ]
+
+myst_enable_extensions = ['colon_fence']
+myst_heading_anchors = 3
 
 autodoc_mock_imports = [
     'matplotlib', 'pycocotools', 'terminaltables', 'mmdet.version', 'mmcv.ops'
@@ -64,7 +67,7 @@ source_suffix = {
     '.md': 'markdown',
 }
 
-# The master toctree document.
+# The main toctree document.
 master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and

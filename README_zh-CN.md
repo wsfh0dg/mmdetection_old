@@ -21,28 +21,57 @@
 [![PyPI](https://img.shields.io/pypi/v/mmdet)](https://pypi.org/project/mmdet)
 [![docs](https://img.shields.io/badge/docs-latest-blue)](https://mmdetection.readthedocs.io/en/latest/)
 [![badge](https://github.com/open-mmlab/mmdetection/workflows/build/badge.svg)](https://github.com/open-mmlab/mmdetection/actions)
-[![codecov](https://codecov.io/gh/open-mmlab/mmdetection/branch/master/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmdetection)
-[![license](https://img.shields.io/github/license/open-mmlab/mmdetection.svg)](https://github.com/open-mmlab/mmdetection/blob/master/LICENSE)
+[![codecov](https://codecov.io/gh/open-mmlab/mmdetection/branch/main/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmdetection)
+[![license](https://img.shields.io/github/license/open-mmlab/mmdetection.svg)](https://github.com/open-mmlab/mmdetection/blob/main/LICENSE)
 [![open issues](https://isitmaintained.com/badge/open/open-mmlab/mmdetection.svg)](https://github.com/open-mmlab/mmdetection/issues)
+[![issue resolution](https://isitmaintained.com/badge/resolution/open-mmlab/mmdetection.svg)](https://github.com/open-mmlab/mmdetection/issues)
 
-  <img src="https://user-images.githubusercontent.com/12907710/137271636-56ba1cd2-b110-4812-8221-b4c120320aa9.png"/>
-
-[📘使用文档](https://mmdetection.readthedocs.io/zh_CN/v2.21.0/) |
-[🛠️安装教程](https://mmdetection.readthedocs.io/zh_CN/v2.21.0/get_started.html) |
-[👀模型库](https://mmdetection.readthedocs.io/zh_CN/v2.21.0/model_zoo.html) |
-[🆕更新日志](https://mmdetection.readthedocs.io/en/v2.21.0/changelog.html) |
+[📘使用文档](https://mmdetection.readthedocs.io/zh_CN/latest/) |
+[🛠️安装教程](https://mmdetection.readthedocs.io/zh_CN/latest/get_started.html) |
+[👀模型库](https://mmdetection.readthedocs.io/zh_CN/latest/model_zoo.html) |
+[🆕更新日志](https://mmdetection.readthedocs.io/en/latest/notes/changelog.html) |
 [🚀进行中的项目](https://github.com/open-mmlab/mmdetection/projects) |
 [🤔报告问题](https://github.com/open-mmlab/mmdetection/issues/new/choose)
 
 </div>
 
-## 简介
+<div align="center">
 
 [English](README.md) | 简体中文
 
+</div>
+
+<div align="center">
+  <a href="https://openmmlab.medium.com/" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/219255827-67c1a27f-f8c5-46a9-811d-5e57448c61d1.png" width="3%" alt="" /></a>
+  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
+  <a href="https://discord.com/channels/1037617289144569886/1046608014234370059" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a>
+  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
+  <a href="https://twitter.com/OpenMMLab" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/218346637-d30c8a0f-3eba-4699-8131-512fb06d46db.png" width="3%" alt="" /></a>
+  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
+  <a href="https://www.youtube.com/openmmlab" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/218346691-ceb2116a-465a-40af-8424-9f30d2348ca9.png" width="3%" alt="" /></a>
+  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
+  <a href="https://space.bilibili.com/1293512903" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/219026751-d7d14cce-a7c9-4e82-9942-8375fca65b99.png" width="3%" alt="" /></a>
+  <img src="https://user-images.githubusercontent.com/25839884/218346358-56cc8e2f-a2b8-487f-9088-32480cceabcf.png" width="3%" alt="" />
+  <a href="https://www.zhihu.com/people/openmmlab" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/219026120-ba71e48b-6e94-4bd4-b4e9-b7d175b5e362.png" width="3%" alt="" /></a>
+</div>
+
+<div align="center">
+<img src="https://github.com/open-mmlab/mmdetection/assets/17425982/6c29886f-ae7a-4a55-8be4-352ee85b7d3e"/>
+</div>
+
+## 简介
+
 MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [OpenMMLab](https://openmmlab.com/) 项目的一部分。
 
-主分支代码目前支持 PyTorch 1.5 以上的版本。
+主分支代码目前支持 PyTorch 1.8 及其以上的版本。
+
+<img src="https://user-images.githubusercontent.com/12907710/187674113-2074d658-f2fb-42d1-ac15-9c4a695e64d7.png"/>
 
 <details open>
 <summary>主要特性</summary>
@@ -51,9 +80,9 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
 
   MMDetection 将检测框架解耦成不同的模块组件，通过组合不同的模块组件，用户可以便捷地构建自定义的检测模型
 
-- **丰富的即插即用的算法和模型**
+- **支持多种检测任务**
 
-  MMDetection 支持了众多主流的和最新的检测算法，例如 Faster R-CNN，Mask R-CNN，RetinaNet 等。
+  MMDetection 支持了各种不同的检测任务，包括**目标检测**，**实例分割**，**全景分割**，以及**半监督目标检测**。
 
 - **速度快**
 
@@ -62,26 +91,85 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
 - **性能高**
 
   MMDetection 这个算法库源自于 COCO 2018 目标检测竞赛的冠军团队 *MMDet* 团队开发的代码，我们在之后持续进行了改进和提升。
+  新发布的 [RTMDet](configs/rtmdet) 还在实时实例分割和旋转目标检测任务中取得了最先进的成果，同时也在目标检测模型中取得了最佳的的参数量和精度平衡。
 
 </details>
 
-除了 MMDetection 之外，我们还开源了计算机视觉基础库 [MMCV](https://github.com/open-mmlab/mmcv)，MMCV 是 MMDetection 的主要依赖。
+除了 MMDetection 之外，我们还开源了深度学习训练库 [MMEngine](https://github.com/open-mmlab/mmengine) 和计算机视觉基础库 [MMCV](https://github.com/open-mmlab/mmcv)，它们是 MMDetection 的主要依赖。
 
-## 开源许可证
+## 最新进展
 
-该项目采用 [Apache 2.0 开源许可证](LICENSE)。
+### 亮点
 
-## 更新日志
+我们很高兴向大家介绍我们在实时目标识别任务方面的最新成果 RTMDet，包含了一系列的全卷积单阶段检测模型。 RTMDet 不仅在从 tiny 到 extra-large 尺寸的目标检测模型上实现了最佳的参数量和精度的平衡，而且在实时实例分割和旋转目标检测任务上取得了最先进的成果。 更多细节请参阅[技术报告](https://arxiv.org/abs/2212.07784)。 预训练模型可以在[这里](configs/rtmdet)找到。
 
-最新的 **2.22.0** 版本已经在 2022.02.24 发布:
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rtmdet-an-empirical-study-of-designing-real/real-time-instance-segmentation-on-mscoco)](https://paperswithcode.com/sota/real-time-instance-segmentation-on-mscoco?p=rtmdet-an-empirical-study-of-designing-real)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rtmdet-an-empirical-study-of-designing-real/object-detection-in-aerial-images-on-dota-1)](https://paperswithcode.com/sota/object-detection-in-aerial-images-on-dota-1?p=rtmdet-an-empirical-study-of-designing-real)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rtmdet-an-empirical-study-of-designing-real/object-detection-in-aerial-images-on-hrsc2016)](https://paperswithcode.com/sota/object-detection-in-aerial-images-on-hrsc2016?p=rtmdet-an-empirical-study-of-designing-real)
 
-- 支持 [MaskFormer](configs/maskformer)，[DyHead](configs/dyhead)，[OpenImages Dataset](configs/openimages) 和 [TIMM backbone](configs/timm_example)
-- 支持全景分割可视化
-- 发布了一个在目标检测任务中使用 ResNet 的好方法，它是由 [ResNet Strikes Back](https://arxiv.org/abs/2110.00476) 预训练的，并且能稳定的在 RetinaNet, Faster/Mask/Cascade Mask R-CNN 上带来约 3-4 mAP 的提升
+| Task                     | Dataset | AP                                   | FPS(TRT FP16 BS1 3090) |
+| ------------------------ | ------- | ------------------------------------ | ---------------------- |
+| Object Detection         | COCO    | 52.8                                 | 322                    |
+| Instance Segmentation    | COCO    | 44.6                                 | 188                    |
+| Rotated Object Detection | DOTA    | 78.9(single-scale)/81.3(multi-scale) | 121                    |
 
-如果想了解更多版本更新细节和历史信息，请阅读[更新日志](docs/changelog.md)。
+<div align=center>
+<img src="https://user-images.githubusercontent.com/12907710/208044554-1e8de6b5-48d8-44e4-a7b5-75076c7ebb71.png"/>
+</div>
 
-如果想了解 MMDetection 不同版本之间的兼容性, 请参考[兼容性说明文档](docs/zh_cn/compatibility.md)。
+**v3.1.0** 版本已经在 2023.6.30 发布：
+
+- 支持 Tracking 类算法，包括多目标跟踪 MOT 算法 SORT、DeepSORT、StrongSORT、OCSORT、ByteTrack、QDTrack 和视频实例分割 VIS 算法 MaskTrackRCNN、Mask2Former-VIS。
+- 支持 [ViTDet](projects/ViTDet)
+- 支持多模态开放检测算法 [GLIP](configs/glip) 和 [XDecoder](projects/XDecoder) 推理和评估，并同时支持了 COCO 语义分割、COCO Caption、ADE20k 通用分割、RefCOCO 等数据集。后续将支持 GLIP 微调
+- 提供了包括 MMDetection 图片任务的 [gradio demo](https://github.com/open-mmlab/mmdetection/blob/dev-3.x/projects/gradio_demo/README.md)，方便用户快速体验
+
+## 安装
+
+请参考[快速入门文档](https://mmdetection.readthedocs.io/zh_CN/latest/get_started.html)进行安装。
+
+## 教程
+
+请阅读[概述](https://mmdetection.readthedocs.io/zh_CN/latest/get_started.html)对 MMDetection 进行初步的了解。
+
+为了帮助用户更进一步了解 MMDetection，我们准备了用户指南和进阶指南，请阅读我们的[文档](https://mmdetection.readthedocs.io/zh_CN/latest/)：
+
+- 用户指南
+
+  <details>
+
+  - [训练 & 测试](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/index.html#train-test)
+    - [学习配置文件](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/config.html)
+    - [使用已有模型在标准数据集上进行推理](https://mmdetection.readthedocs.io/en/latest/user_guides/inference.html)
+    - [数据集准备](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/dataset_prepare.html)
+    - [测试现有模型](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/test.html)
+    - [在标准数据集上训练预定义的模型](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/train.html)
+    - [在自定义数据集上进行训练](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/train.html#train-with-customized-datasets)
+    - [在标准数据集上训练自定义模型](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/new_model.html)
+    - [模型微调](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/finetune.html)
+    - [提交测试结果](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/test_results_submission.html)
+    - [权重初始化](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/init_cfg.html)
+    - [将单阶段检测器作为 RPN](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/single_stage_as_rpn.html)
+    - [半监督目标检测](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/semi_det.html)
+  - [实用工具](https://mmdetection.readthedocs.io/zh_CN/latest/user_guides/index.html#useful-tools)
+
+  </details>
+
+- 进阶指南
+
+  <details>
+
+  - [基础概念](https://mmdetection.readthedocs.io/zh_CN/latest/advanced_guides/index.html#basic-concepts)
+  - [组件定制](https://mmdetection.readthedocs.io/zh_CN/latest/advanced_guides/index.html#component-customization)
+  - [How to](https://mmdetection.readthedocs.io/zh_CN/latest/advanced_guides/index.html#how-to)
+
+  </details>
+
+我们提供了检测的 colab 教程 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](demo/MMDet_Tutorial.ipynb) 和 实例分割的 colab 教程 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](demo/MMDet_Tutorial.ipynb)
+
+同时，我们还提供了 [MMDetection 中文解读文案汇总](docs/zh_cn/article.md)
+
+若需要将2.x版本的代码迁移至新版，请参考[迁移文档](https://mmdetection.readthedocs.io/en/latest/migration.html)。
 
 ## 基准测试和模型库
 
@@ -131,6 +219,7 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
             <li><a href="configs/double_heads">Double-Head R-CNN (CVPR'2020)</a></li>
             <li><a href="configs/atss">ATSS (CVPR'2020)</a></li>
             <li><a href="configs/nas_fcos">NAS-FCOS (CVPR'2020)</a></li>
+            <li><a href="configs/centripetalnet">CentripetalNet (CVPR'2020)</a></li>
             <li><a href="configs/autoassign">AutoAssign (ArXiv'2020)</a></li>
             <li><a href="configs/sabl">Side-Aware Boundary Localization (ECCV'2020)</a></li>
             <li><a href="configs/dynamic_rcnn">Dynamic R-CNN (ECCV'2020)</a></li>
@@ -142,6 +231,15 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
             <li><a href="configs/yolox">YOLOX (CVPR'2021)</a></li>
             <li><a href="configs/deformable_detr">Deformable DETR (ICLR'2021)</a></li>
             <li><a href="configs/tood">TOOD (ICCV'2021)</a></li>
+            <li><a href="configs/ddod">DDOD (ACM MM'2021)</a></li>
+            <li><a href="configs/rtmdet">RTMDet (ArXiv'2022)</a></li>
+            <li><a href="configs/conditional_detr">Conditional DETR (ICCV'2021)</a></li>
+            <li><a href="configs/dab_detr">DAB-DETR (ICLR'2022)</a></li>
+            <li><a href="configs/dino">DINO (ICLR'2023)</a></li>
+            <li><a href="configs/glip">GLIP (CVPR'2022)</a></li>
+            <li><a href="projects/DiffusionDet">DiffusionDet (ArXiv'2023)</a></li>
+            <li><a href="projects/EfficientDet">EfficientDet (CVPR'2020)</a></li>
+            <li><a href="projects/Detic">Detic (ECCV'2022)</a></li>
       </ul>
       </td>
       <td>
@@ -155,13 +253,21 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
           <li><a href="configs/solo">SOLO (ECCV'2020)</a></li>
           <li><a href="configs/point_rend">PointRend (CVPR'2020)</a></li>
           <li><a href="configs/detectors">DetectoRS (ArXiv'2020)</a></li>
+          <li><a href="configs/solov2">SOLOv2 (NeurIPS'2020)</a></li>
           <li><a href="configs/scnet">SCNet (AAAI'2021)</a></li>
           <li><a href="configs/queryinst">QueryInst (ICCV'2021)</a></li>
+          <li><a href="configs/mask2former">Mask2Former (ArXiv'2021)</a></li>
+          <li><a href="configs/condinst">CondInst (ECCV'2020)</a></li>
+          <li><a href="projects/SparseInst">SparseInst (CVPR'2022)</a></li>
+          <li><a href="configs/rtmdet">RTMDet (ArXiv'2022)</a></li>
+          <li><a href="configs/boxinst">BoxInst (CVPR'2021)</a></li>
         </ul>
       </td>
       <td>
         <ul>
           <li><a href="configs/panoptic_fpn">Panoptic FPN (CVPR'2019)</a></li>
+          <li><a href="configs/maskformer">MaskFormer (NeurIPS'2021)</a></li>
+          <li><a href="configs/mask2former">Mask2Former (ArXiv'2021)</a></li>
         </ul>
       </td>
       <td>
@@ -180,6 +286,12 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
         <ul>
           <li><a href="configs/ld">Localization Distillation (CVPR'2022)</a></li>
           <li><a href="configs/lad">Label Assignment Distillation (WACV'2022)</a></li>
+        </ul>
+        </ul>
+          <li><b>Semi-Supervised Object Detection</b></li>
+        <ul>
+        <ul>
+          <li><a href="configs/soft_teacher">Soft Teacher (ICCV'2021)</a></li>
         </ul>
         </ul>
       </ul>
@@ -226,6 +338,9 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
         <li><a href="configs/swin">Swin (CVPR'2021)</a></li>
         <li><a href="configs/pvt">PVTv2 (ArXiv'2021)</a></li>
         <li><a href="configs/resnet_strikes_back">ResNet strikes back (ArXiv'2021)</a></li>
+        <li><a href="configs/efficientnet">EfficientNet (ArXiv'2021)</a></li>
+        <li><a href="configs/convnext">ConvNeXt (CVPR'2022)</a></li>
+        <li><a href="projects/ConvNeXt-V2">ConvNeXtv2 (ArXiv'2023)</a></li>
       </ul>
       </td>
       <td>
@@ -263,24 +378,11 @@ MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 [Ope
   </tbody>
 </table>
 
-我们在[基于 MMDetection 的项目](./docs/zh_cn/projects.md)中列举了一些其他的支持的算法。
+我们在[基于 MMDetection 的项目](./docs/zh_cn/notes/projects.md)中列举了一些其他的支持的算法。
 
-## 安装
+## 常见问题
 
-请参考[快速入门文档](docs/zh_cn/get_started.md)进行安装。
-
-## 快速入门
-
-请参考[快速入门文档](docs/zh_cn/get_started.md)学习 MMDetection 的基本使用。
-我们提供了 [检测的 colab 教程](demo/MMDet_Tutorial.ipynb) 和 [实例分割的 colab 教程](demo/MMDet_InstanceSeg_Tutorial.ipynb)，也为新手提供了完整的运行教程，分别针对[已有数据集](docs/zh_cn/1_exist_data_model.md)和[新数据集](docs/zh_cn/2_new_data_model.md) 完整的使用指南
-
-我们也提供了一些进阶教程，内容覆盖了 [finetune 模型](docs/zh_cn/tutorials/finetune.md)，[增加新数据集支持](docs/zh_cn/tutorials/customize_dataset.md)，[设计新的数据预处理流程](docs/zh_cn/tutorials/data_pipeline.md)，[增加自定义模型](docs/zh_cn/tutorials/customize_models.md)，[增加自定义的运行时配置](docs/zh_cn/tutorials/customize_runtime.md)，[常用工具和脚本](docs/zh_cn/useful_tools.md)。
-
-如果遇到问题，请参考 [常见问题解答](docs/zh_cn/faq.md)。
-
-## 相关教程
-
-请参考 [MMDetection 中文解读文案汇总](docs/zh_cn/article.md)
+请参考 [FAQ](docs/zh_cn/notes/faq.md) 了解其他用户的常见问题。
 
 ## 贡献指南
 
@@ -308,14 +410,20 @@ MMDetection 是一款由来自不同高校和企业的研发人员共同参与�
 }
 ```
 
+## 开源许可证
+
+该项目采用 [Apache 2.0 开源许可证](LICENSE)。
+
 ## OpenMMLab 的其他项目
 
+- [MMEngine](https://github.com/open-mmlab/mmengine): OpenMMLab 深度学习模型训练基础库
 - [MMCV](https://github.com/open-mmlab/mmcv): OpenMMLab 计算机视觉基础库
-- [MIM](https://github.com/open-mmlab/mim): MIM 是 OpenMMlab 项目、算法、模型的统一入口
-- [MMClassification](https://github.com/open-mmlab/mmclassification): OpenMMLab 图像分类工具箱
+- [MMPreTrain](https://github.com/open-mmlab/mmpretrain): OpenMMLab 深度学习预训练工具箱
+- [MMagic](https://github.com/open-mmlab/mmagic): OpenMMLab 新一代人工智能内容生成（AIGC）工具箱
 - [MMDetection](https://github.com/open-mmlab/mmdetection): OpenMMLab 目标检测工具箱
 - [MMDetection3D](https://github.com/open-mmlab/mmdetection3d): OpenMMLab 新一代通用 3D 目标检测平台
 - [MMRotate](https://github.com/open-mmlab/mmrotate): OpenMMLab 旋转框检测工具箱与测试基准
+- [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO 系列工具箱与测试基准
 - [MMSegmentation](https://github.com/open-mmlab/mmsegmentation): OpenMMLab 语义分割工具箱
 - [MMOCR](https://github.com/open-mmlab/mmocr): OpenMMLab 全流程文字检测识别理解工具包
 - [MMPose](https://github.com/open-mmlab/mmpose): OpenMMLab 姿态估计工具箱
@@ -329,6 +437,9 @@ MMDetection 是一款由来自不同高校和企业的研发人员共同参与�
 - [MMEditing](https://github.com/open-mmlab/mmediting): OpenMMLab 图像视频编辑工具箱
 - [MMGeneration](https://github.com/open-mmlab/mmgeneration): OpenMMLab 图片视频生成模型工具箱
 - [MMDeploy](https://github.com/open-mmlab/mmdeploy): OpenMMLab 模型部署框架
+- [MIM](https://github.com/open-mmlab/mim): OpenMMlab 项目、算法、模型的统一入口
+- [MMEval](https://github.com/open-mmlab/mmeval): 统一开放的跨框架算法评测库
+- [Playground](https://github.com/open-mmlab/playground): 收集和展示 OpenMMLab 相关的前沿、有趣的社区项目
 
 ## 欢迎加入 OpenMMLab 社区
 
